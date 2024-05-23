@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div id="container" class="container"> 
+      <div class="content-container">
+        <h2>Stay updated!</h2>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+
+          <div class="email-msg">
+            <span>Email Address</span>
+            <span id="error-msg"></span>
+          </div>
+          <input placeholder="email@company.com" type="text" name="email" id="email">
+          <button id="sub-button">Subscribe to monthly newsletter</button>
+
+      </div>
+
+      <div class="img-container">
+
+        <img src="./images/illustration-sign-up-desktop.svg" width="350px" alt="">
+
+      </div>
+    </div>
+
+
+    <div id="success-container">
+      <div class="success-icon">
+        <img src="./images/icon-success.svg" alt="">
+      </div>
+      <h2>Thanks for subscribing!</h2>
+      <p>A confirmation email has been sent to <span id="user-email"></span> Please open it and click the button inside
+        to confirm your subscription
+      </p>
+      <button id="success-dismiss-button">Dismiss message</button>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
